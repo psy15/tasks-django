@@ -1,0 +1,9 @@
+<h1>Register</h1>
+
+{% comment %} <a href={% url 'todo'%}>Go back</a> {% endcomment %}
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <input type="submit" value="Register" />
+</form>
+
+<p>ALready have an account? <a href="">Login</a></p>

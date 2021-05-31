@@ -1,0 +1,6 @@
+<a href='{% url 'todo'%}'>Go back</a>
+<form method="post">
+  {% csrf_token %}
+  <p>are you sure?</p>
+  <input value="Delete" type="submit" />
+</form>
